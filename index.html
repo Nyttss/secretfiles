@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For my darl.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div id="welcomeText" class="welcome-text">Special Gift For You , Darling <3</div>
+        <button id="startButton">Open</button>
+        <div id="imageContainer">
+            <div class="imageButton" onclick="handleImageClick('Journey')">
+                <img src="buttons/journey-icon.png" alt="Journey">
+                <div class="overlay">
+                    <div class="overlay-text">Journey</div>
+                </div>
+            </div>
+            <div class="imageButton" onclick="handleImageClick('Moments')">
+                <img src="buttons/moments-icon.png" alt="Moments">
+                <div class="overlay">
+                    <div class="overlay-text">Moments</div>
+                </div>
+            </div>
+            <div class="imageButton" onclick="handleImageClick('Gift')">
+                <img src="buttons/gift-icon.png" alt="Gift">
+                <div class="overlay">
+                    <div class="overlay-text">Gift</div>
+                </div>
+            </div>
+            <div class="imageButton" onclick="handleImageClick('Message')">
+                <img src="buttons/message-icon.png" alt="Message">
+                <div class="overlay">
+                    <div class="overlay-text">Message</div>
+                </div>
+            </div>
+            <div class="imageButton" onclick="handleImageClick('Playlist')">
+                <img src="buttons/playlist-icon.png" alt="Playlist">
+                <div class="overlay">
+                    <div class="overlay-text">Playlist</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="journeyPhotosContainer" class="journey-photos-container">
+            <button id="backButton" class="back-button">Back</button>
+            <center>💜💜💜</center><br>
+            <div class="journey-photos">
+                <img src="journey/photo1.jpg" alt="Journey Photo 1" onclick="openFullImage('journey/photo1.jpg')">
+                <img src="journey/photo2.jpg" alt="Journey Photo 2" onclick="openFullImage('journey/photo2.jpg')">
+                <img src="journey/photo3.jpg" alt="Journey Photo 3" onclick="openFullImage('journey/photo3.jpg')">
+                <img src="journey/photo4.jpg" alt="Journey Photo 4" onclick="openFullImage('journey/photo4.jpg')">
+                <img src="journey/photo5.jpg" alt="Journey Photo 5" onclick="openFullImage('journey/photo5.jpg')">
+                <img src="journey/photo6.jpg" alt="Journey Photo 6" onclick="openFullImage('journey/photo6.jpg')">
+                <img src="journey/photo7.jpg" alt="Journey Photo 7" onclick="openFullImage('journey/photo7.jpg')">
+                <img src="journey/photo8.jpg" alt="Journey Photo 8" onclick="openFullImage('journey/photo8.jpg')">
+                <img src="journey/photo9.jpg" alt="Journey Photo 9" onclick="openFullImage('journey/photo9.jpg')">
+            </div>
+            <div id="fullImageContainer" class="full-image-container">
+                <span class="close-full-image">&times;</span>
+                <img id="fullImage" src="" alt="Full Image">
+            </div>
+        </div>
+
+        <div id="momentsContainer" class="moments-container">
+            <button id="backButtonMoments" class="back-button">Back</button>
+            <div class="moments-header">
+                <h2>How Long We've Been Together?</h2>
+                <div class="time-tracking">
+                    <div class="time-unit">
+                        <span id="yearsTogether">0</span>
+                        <p>Years</p>
+                    </div>
+                    <div class="time-unit">
+                        <span id="monthsTogether">0</span>
+                        <p>Months</p>
+                    </div>
+                    <div class="time-unit">
+                        <span id="daysTogether">0</span>
+                        <p>Days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="moments-content">
+            </div>
+        </div>
+
+ <div id="giftContainer" class="gift-container">
+    <button id="backButtonGift" class="back-button">Back</button>
+    <div class="gift-grid">
+        <!-- Gift 1 -->
+        <div class="gift-item">
+            <div class="gift-preview" onclick="openGiftDetail('gift1')">
+                <img src="buttons/gift.png" alt="Gift 1">
+                <div class="gift-label">Gift 1</div>
+            </div>
+            <div id="gift1" class="gift-detail">
+                <div class="gift-content">
+                    <span class="close-gift">&times;</span>
+                    <h3>Special Gift 1</h3>
+                    <p>Hairclamp 🦋🦋🦋</p>
+                    <img src="gift/image1.png" alt="Gift 1 Detail">
+                </div>
+            </div>
+        </div>
+
+        <!-- Gift 2 -->
+        <div class="gift-item">
+            <div class="gift-preview" onclick="openGiftDetail('gift2')">
+                <img src="buttons/gift.png" alt="Gift 2">
+                <div class="gift-label">Gift 2</div>
+            </div>
+            <div id="gift2" class="gift-detail">
+                <div class="gift-content">
+                    <span class="close-gift">&times;</span>
+                    <h3>Special Gift 2</h3>
+                    <p>Ringleader and Delicate 💋💋💋</p>
+                    <img src="gift/image2.png" alt="Gift 2 Detail">
+                </div>
+            </div>
+        </div>
+
+        <!-- Gift 3 (Opens New Tab with Flower Animation) -->
+        <div class="gift-item">
+            <div class="gift-preview" onclick="window.open('flower-animation/index.html', '_blank')">
+                <img src="buttons/gift.png" alt="Gift 3">
+                <div class="gift-label">Gift 3</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="messageContainer" class="message-container">
+    <button id="backButtonMessage" class="back-button">Back</button>
+    <div class="message-content">
+        <h2>My Message For You</h2>
+        <div class="message-text">
+            <p>Dear Danirose,</p>
+            <p>Happy Valentines Day and Happy Monthsary In Advance, Darlinggss ^_^ . Bago ang lahat gusto ko palagi sayo magpasalamat sa lahat at sa walang sawang pag suporta sakin sa mga bagay-bagay. <3  </p>
+            <p>Palagi mong tatandaan na mahal na mahal kita kahit palagi man tayo nag aaway o magkatampuhan. Alam kong magkakaayos din kaagad tayo dahil hindi rin natin matiis ang isa't isa.</p>
+            <p>Pinapangako ko na andyan ako palagi sa tabi mo , na walang sawang mahalin ka , at iipunin ko ang mga ala-ala natin magkasama. Dahil ikaw lang ang nagparamdam at nagkumpleto sa buhay ko , Masaya akong nakasama ka at gusto kong makasama ka hanggang dulo. </p>
+            <p>With all my love,<br>poging boyfiee</p>
+        </div>
+    </div>
+</div>
+
+<div id="playlistContainer" class="playlist-container">
+    <button id="backButtonPlaylist" class="back-button">Back</button>
+    <center><h2>My Playlist</h2></center>
+    <div class="music-player">
+        <!-- Album Art and Equalizer Container -->
+        <div class="album-container">
+            <img src="buttons/album.jpg" alt="Album Cover" class="album-art">
+            <div class="equalizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        
+        <audio id="audioPlayer" controls>
+            <source src="music\ikaw-lamang.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="track-info">
+            <p>Now Playing: <strong>Ikaw Lamang</strong> by Silent Sanctuary</p>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
