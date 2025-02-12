@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen active">
+            <div class="hearts">💜💜💜💜💜</div>
+            <h1>DEAR DANIROSE,<br>LET'S PLAY WITH ME!</h1>
+            <button id="startButton" class="start-btn">START</button>
+        </div>
+
+        <!-- Menu Screen -->
+        <div id="menuScreen" class="screen">
+            <div class="menu">
+                <button class="menu-btn" data-section="journey">
+                    <img src="violet/journey-icon.png" alt="Journey" class="menu-icon">
+                </button>
+                <button class="menu-btn" data-section="moments">
+                    <img src="violet/moments-icon.png" alt="Moments" class="menu-icon">
+                </button>
+                <button class="menu-btn" data-section="gift">
+                    <img src="violet/gift-icon.png" alt="Gift" class="menu-icon">
+                </button>
+                <button class="menu-btn" data-section="message">
+                    <img src="violet/message-icon.png" alt="Message" class="menu-icon">
+                </button>
+                <button class="menu-btn" data-section="playlist">
+                    <img src="violet/playlist-icon.png" alt="Playlist" class="menu-icon">
+                </button>
+            </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div id="journeySection" class="screen section">
+            <div class="photo-grid"></div>
+        </div>
+
+        <div id="momentsSection" class="screen section">
+            <div class="timer"></div>
+        </div>
+
+        <div id="messageSection" class="screen section">
+            <div class="message-content"></div>
+        </div>
+
+        <div id="playlistSection" class="screen section">
+            <div class="music-player"></div>
+        </div>
+
+        <div id="giftSection" class="screen section">
+            <div class="gift-grid"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
