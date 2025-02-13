@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Danirose Interactive Website</title>
+    <title>For my darl.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div id="welcomeText" class="welcome-text">Dear Danirose</div>
-        <button id="startButton">Start</button>
+        
+        <div id="welcomeText" class="welcome-text">Special Gift For You , Darling <3</div>
+        <button id="startButton">Open</button>
         <div id="imageContainer">
             <div class="imageButton" onclick="handleImageClick('Journey')">
                 <img src="buttons/journey-icon.png" alt="Journey">
@@ -44,6 +45,7 @@
         
         <div id="journeyPhotosContainer" class="journey-photos-container">
             <button id="backButton" class="back-button">Back</button>
+            <center>💜💜💜</center><br>
             <div class="journey-photos">
                 <img src="journey/photo1.jpg" alt="Journey Photo 1" onclick="openFullImage('journey/photo1.jpg')">
                 <img src="journey/photo2.jpg" alt="Journey Photo 2" onclick="openFullImage('journey/photo2.jpg')">
@@ -97,8 +99,8 @@
                 <div class="gift-content">
                     <span class="close-gift">&times;</span>
                     <h3>Special Gift 1</h3>
-                    <p>Content for gift 1 goes here</p>
-                    <img src="gift/image1.png" alt="Gift 1 Detail">
+                    <p>Hairclamp 🦋🦋🦋</p>
+                    <img src="gift/image1.PNG" alt="Gift 1 Detail">
                 </div>
             </div>
         </div>
@@ -113,7 +115,7 @@
                 <div class="gift-content">
                     <span class="close-gift">&times;</span>
                     <h3>Special Gift 2</h3>
-                    <p>Content for gift 2 goes here</p>
+                    <p>Ringleader and Delicate 💋💋💋</p>
                     <img src="gift/image2.png" alt="Gift 2 Detail">
                 </div>
             </div>
@@ -137,13 +139,40 @@
             <p>Dear Danirose,</p>
             <p>Happy Valentines Day and Happy Monthsary In Advance, Darlinggss ^_^ . Bago ang lahat gusto ko palagi sayo magpasalamat sa lahat at sa walang sawang pag suporta sakin sa mga bagay-bagay. ❤️  </p>
             <p>Palagi mong tatandaan na mahal na mahal kita kahit palagi man tayo nag aaway o magkatampuhan. Alam kong magkakaayos din kaagad tayo dahil hindi rin natin matiis ang isa't isa. HAHAHAHAHA :P</p>
-            <p>Pinapangako ko na andyan ako palagi sa tabi mo sa tuwing kailangan mo at walang sawang mahalin ka.Iipunin ko ang mga ala-ala natin na magkasama. Dahil ikaw lang ang nagparamdam at nagkumpleto sa buhay ko , Masaya akong nakasama ka at gusto kong makasama hanggang dulo. ❤️</p>
+            <p>Pinapangako ko na andyan ako palagi sa tabi mo , na walang sawang mahalin ka , at iipunin ko ang mga ala-ala natin magkasama. Dahil ikaw lang ang nagparamdam at nagkumpleto sa buhay ko , Masaya akong nakasama ka at gusto kong makasama ka hanggang dulo. ❤️</p>
             <p>With all my love,<br>poging boyfiee</p>
-         </div>
+        </div>
     </div>
 </div>
+
+<div id="playlistContainer" class="playlist-container">
+    <button id="backButtonPlaylist" class="back-button">Back</button>
+    <center><h2>My Playlist</h2></center>
+    <div class="music-player">
+        <!-- Album Art and Equalizer Container -->
+        <div class="album-container">
+            <img src="buttons/album.jpg" alt="Album Cover" class="album-art">
+            <div class="equalizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
         
-        
+        <audio id="audioPlayer" controls>
+            <source src="music\ikaw-lamang.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="track-info">
+            <p>Now Playing: <strong>Ikaw Lamang</strong> by Silent Sanctuary</p>
+        </div>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
